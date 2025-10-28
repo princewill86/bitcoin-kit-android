@@ -3,7 +3,7 @@
 #
 cmake_minimum_required(VERSION 3.4.1)
 set(CMAKE_CXX_STANDARD 11)
-
+set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,-z,max-page-size=16384")
 set(OPSYS "DROID")
 
 add_library( # Sets the name of the library.
